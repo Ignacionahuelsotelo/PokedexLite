@@ -1,0 +1,11 @@
+{
+  "pokemones": [
+    {
+      "nombre": "Charizard",
+      "tipo": {
+        "poder": "fuego"
+      },
+      "nivel": 1.0
+    }
+  ]
+}
