@@ -2,18 +2,19 @@ package logica;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map.Entry;
 
 public class Pokedex {
 
 	private String dueño;
-	private HashMap<String , Pokemon> contenido;
+	private HashMap<String , ArrayList<Pokemon>> contenido;
 	private ArrayList<Pokemon> pokemones;
 	
 	public Pokedex(String dueño) {
 		
 		this.dueño = dueño;
-		this.contenido = contenido;
 		this.pokemones = new ArrayList<Pokemon>();
+		this.contenido = new HashMap<String,ArrayList<Pokemon>>();
 	}
 	
 	public void subirNivel (Pokemon p) {
@@ -25,21 +26,33 @@ public class Pokedex {
 		return ;
 	}
 	
-	public void agregarPokemon (Pokemon p) {
-		if (p == null)
-			throw new NullPointerException("No se puede agregar una persona null");
-
-		if (!pokemones.contains(p)) {
-			pokemones.add(p);
+	//agrega un pokemon con un usuario asociado a la pokedex
+	public void agregarPokemon(Pokemon p, Usuario u) {
+		if (!contenido.containsKey(u.getNombre())) {
+			ArrayList<Pokemon> pokemonesNuevos = new ArrayList<>();
+			pokemonesNuevos.add(p);
+			contenido.put(u.getNombre(), pokemonesNuevos);
+		}
+		for (Entry<String, ArrayList<Pokemon>> entry : contenido.entrySet() ) {
+			if(entry.getKey().equals(u.getNombre())) {;
+				if (!entry.getValue().contains(p)) {	
+					entry.getValue().add(p);
+				}
+			}
 		}
 	}
 	
-	public void cargarPokemon (String nombre, TipoDePokemon tipo, double nivel) {
-		Pokemon p = new Pokemon(nombre, tipo, nivel);
-		agregarPokemon(p);
+	//carga la informacion de los usuarios y sus respectivas pokedex
+	public void cargarPokedex (HashMap<String , ArrayList<Pokemon>> pokemonesCargados) {
+		contenido = pokemonesCargados;
 	}
 	
-	public ArrayList<Pokemon>  getPokemones () {
-		return pokemones;
+	
+	public void cargarPokemon (	Pokemon p, Usuario u) {
+		agregarPokemon(p,u);
+	}
+	
+	public HashMap<String , ArrayList<Pokemon>>  getPokemones () {
+		return contenido;
 	}
 }

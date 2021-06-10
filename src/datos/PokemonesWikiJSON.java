@@ -1,36 +1,36 @@
 package datos;
 
 import java.io.BufferedReader;
-import java.io.EOFException;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Map.Entry;
 
-import com.google.gson.*;
-
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import logica.Pokemon;
-import logica.Usuario;
 
-public class PokemonesJSON {
-	private HashMap<String , ArrayList<Pokemon>> pokemones;
-
-	public PokemonesJSON() {
-		pokemones = new HashMap<String , ArrayList<Pokemon>>();
+public class PokemonesWikiJSON {
+	// esta clase sera la encargada de implementar los metodos JSON
+	private ArrayList<Pokemon> pokemones;
+	
+	public PokemonesWikiJSON() {
+		pokemones = new ArrayList<Pokemon>();
+		
 	}
 
-
-	public void addPokemon(HashMap<String, ArrayList<Pokemon>> pokemones2) {
-		pokemones=pokemones2;
+	
+	public void addPokemon(ArrayList<Pokemon> p) {
+		pokemones = p;
 	}
-
+	
 	public int tamanio() {
 		return pokemones.size();
 	}
+
 
 	//genera un JSON en un formato mas amigable
 	public String generarJSONPretty() {
@@ -53,12 +53,12 @@ public class PokemonesJSON {
 	}
 	
 	//lee el contenido del JSON 
-	public static PokemonesJSON leerJSON(String archivo) {
+	public static PokemonesWikiJSON leerJSON(String archivo) {
 		Gson gson = new Gson();
-		PokemonesJSON ret = null;
+		PokemonesWikiJSON ret = null;
 		try {	
 			BufferedReader br = new BufferedReader(new FileReader(archivo));
-			ret = gson.fromJson(br, PokemonesJSON.class);
+			ret = gson.fromJson(br, PokemonesWikiJSON.class);
 		}catch (FileNotFoundException e) {
 			// TODO: handle exception
 		} 
@@ -67,26 +67,15 @@ public class PokemonesJSON {
 		}
 		return ret;
 	}
-	
-	
-	public ArrayList<String> getPokemonesString (){
-		ArrayList<String> ret = new ArrayList<String>();
-		for (int i = 0; i < this.pokemones.size(); i++) {
-			ret.add(pokemones.get(i).toString());
-		}
-		return ret;
-	}
-	
-	public HashMap<String, ArrayList<Pokemon>> getPokemones () {
+
+	public ArrayList<Pokemon> getInformacionPokemones() {
 		return pokemones;
 	}
 
 	@Override
 	public String toString() {
-		return "PokemonesJSON [pokemones=" + pokemones.toString() + "]";
+		return "PokemonesWikiJSON [pokemones=" + pokemones.toString() + "]";
 	}
 
-	
 
-	
 }

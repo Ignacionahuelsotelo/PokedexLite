@@ -1,0 +1,77 @@
+{
+  "pokemones": {
+    "josesito": [
+      {
+        "nombre": "Bulbasur",
+        "tipo": {
+          "tipo": "planta"
+        },
+        "nivel": 1.0,
+        "evoluciones": [
+          {
+            "nombre": "ivysaur",
+            "tipo": "Lineal ",
+            "nivelNecesario": 10.0
+          },
+          {
+            "nombre": "venesaur",
+            "tipo": "Lineal ",
+            "nivelNecesario": 10.0
+          }
+        ],
+        "habilidades": [
+          {},
+          {}
+        ]
+      }
+    ],
+    "Nacho": [
+      {
+        "nombre": "Charmander",
+        "tipo": {
+          "tipo": "fuego"
+        },
+        "nivel": 1.0,
+        "evoluciones": [
+          {
+            "nombre": "charmaleon",
+            "tipo": "Lineal ",
+            "nivelNecesario": 10.0
+          },
+          {
+            "nombre": "charizard",
+            "tipo": "Lineal ",
+            "nivelNecesario": 10.0
+          }
+        ],
+        "habilidades": [
+          {},
+          {}
+        ]
+      },
+      {
+        "nombre": "Bulbasur",
+        "tipo": {
+          "tipo": "planta"
+        },
+        "nivel": 1.0,
+        "evoluciones": [
+          {
+            "nombre": "ivysaur",
+            "tipo": "Lineal ",
+            "nivelNecesario": 10.0
+          },
+          {
+            "nombre": "venesaur",
+            "tipo": "Lineal ",
+            "nivelNecesario": 10.0
+          }
+        ],
+        "habilidades": [
+          {},
+          {}
+        ]
+      }
+    ]
+  }
+}

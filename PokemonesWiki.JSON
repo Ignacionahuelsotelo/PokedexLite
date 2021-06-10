@@ -1,0 +1,228 @@
+{
+  "pokemones": [
+    {
+      "nombre": "Clefairy",
+      "tipo": {
+        "tipo": "hada"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "Clefable",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "ataque volador"
+        },
+        {
+          "habilidades": "ataque encantador"
+        }
+      ]
+    },
+    {
+      "nombre": "Pikachu",
+      "tipo": {
+        "tipo": "electrico"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "raichu",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "ataque relampago"
+        },
+        {
+          "habilidades": "estruendo"
+        }
+      ]
+    },
+    {
+      "nombre": "Bulbasur",
+      "tipo": {
+        "tipo": "planta"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "ivysaur",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        },
+        {
+        
+        "nombre": "venesaur",
+         "tipo": "Lineal ",
+         "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "planta venenosa"
+        },
+        {
+          "habilidades": "escudo protector"
+        }
+      ]
+    },
+    {
+      "nombre": "Charmander",
+      "tipo": {
+        "tipo": "fuego"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "charmaleon",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        },
+        {
+          "nombre": "charizard",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "bola de fuego"
+        },
+        {
+          "habilidades": "rafaga de fuego"
+        }
+      ]
+    },
+    {
+      "nombre": "Squirtle",
+      "tipo": {
+        "tipo": "agua"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "wartortle",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        },
+        {
+          "nombre": "blastoise",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "inundacion"
+        },
+        {
+          "habilidades": "ataque acuatico"
+        }
+      ]
+    },
+    {
+      "nombre": "Weedle",
+      "tipo": {
+        "tipo": "veneno"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "kakun",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        },
+        {
+          "nombre": "beedrill",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "ataque venenoso"
+        },
+        {
+          "habilidades": "veneno mortal"
+        }
+      ]
+    },
+    {
+      "nombre": "Rattata",
+      "tipo": {
+        "tipo": "normal"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "raticate",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "mordiscon"
+        },
+        {
+          "habilidades": "sigilo"
+        }
+      ]
+    },
+    {
+      "nombre": "Machop",
+      "tipo": {
+        "tipo": "lucha"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "machoke",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        },
+        {
+          "nombre": "machamp",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "puño pesado"
+        },
+        {
+          "habilidades": "combo ligero"
+        }
+      ]
+    },
+    {
+      "nombre": "Vulpix",
+      "tipo": {
+        "tipo": "fuego"
+      },
+      "nivel": 1.0,
+      "evoluciones": [
+        {
+          "nombre": "ninetales",
+          "tipo": "Lineal ",
+          "nivelNecesario": 10.0
+        }
+      ],
+      "habilidades": [
+        {
+          "habilidades": "tormenta de fuego"
+        },
+        {
+          "habilidades": "trampa de calor"
+        }
+      ]
+    }
+  ]
+}
